@@ -23,7 +23,7 @@ Fringe Players — minimal contributions across all categories
 
 Key Findings
 
-Playmakers average 9.03 seasons while Primary Bigs average 8.79 — both roughly twice the career length of role players.
+Playmakers average 9.03 seasons while Primary Bigs average 8.79, both roughly twice the career length of role players.
 Wing Role Players and Backup Bigs average around 3.9 seasons each, suggesting that generic role players are largely interchangeable and replaceable regardless of position.
 Fringe Players average just 1.35 seasons.
 Archetype alone explains about 30% of the variation in career length (R-squared = 0.298), which is meaningful given how many other factors influence a player's career.
