@@ -11,6 +11,7 @@ NBA Players dataset from Kaggle, containing season-by-season performance data fo
 
 ## Methodology
 Since the raw data had one row per player per season, I first collapsed it down to one row per player by averaging their stats across their career. I then used K-Means clustering to group players into archetypes based on their performance profiles. To determine the number of clusters I used the elbow method, which plots how much variance is explained as you add more clusters and looks for the point of diminishing returns. Based on the results and basketball intuition I settled on 5 clusters. After naming the archetypes I ran a linear regression using archetype as the predictor and seasons played as the outcome variable to quantify how much each archetype predicts career longevity.
+![Elbow Plot](elbow_plot.png)
 
 ## Player Archetypes
 The clustering identified 5 distinct player types:
@@ -19,6 +20,7 @@ The clustering identified 5 distinct player types:
 - **Wing Role Players** — versatile but moderate contributors across the board
 - **Backup Bigs** — physical presence without significant offensive output
 - **Fringe Players** — minimal contributions across all categories
+![Player Archetypes Scatter](archetypes_scatter.png)
 
 ## Key Findings
 
@@ -27,6 +29,7 @@ The clustering identified 5 distinct player types:
 - Fringe Players average just 1.35 seasons.
 - Archetype alone explains about 30% of the variation in career length (R-squared = 0.298), which is meaningful given how many other factors influence a player's career.
 - The central finding is that elite specialization in any role predicts career survival. It matters less whether you score or rebound, and more whether you do something at an elite level.
+![Career Length by Archetype](career_length_by_archetype.png)
 
 ## Tools Used
 Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebook
